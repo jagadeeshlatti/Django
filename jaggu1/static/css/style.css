@@ -1,0 +1,119 @@
+{% load static %}
+body{
+    background-color: rgb(227, 221, 221);
+  
+}
+header{
+    /* background-color: rgb(255, 253, 253); */
+    background-image: url('/static/images/11.jpeg');
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.title{
+    display: flex;
+    text-align: center;
+    
+}
+
+
+.title2{
+    width: 30%;
+    
+}
+.title1{
+    font-size: 40px;
+}
+.im{
+    float: right;
+    width: 25vw;
+    height: 40vh;
+    padding: 10px 15px 10px 0px;
+
+}
+
+.about{
+    
+    background-color: #fff;
+    border: 0% 40% 0% 40%;
+    text-align: center;
+    margin: 0% 0% 0% 0%;
+
+}
+.lii :hover{
+    color: blue;
+}
+
+.lii{
+    display: flex;
+    list-style-type: none;
+    margin: 0px 400px;
+    padding: 0px 10px ;
+  
+    
+}
+.lii li{
+    padding:0px 20px;
+    font-size: 20px;
+   
+}
+
+/*main thing*/
+.main{
+    display: flex;
+    position: relative;
+    
+    background-image: url(images/8.jpg);
+    background-repeat: no-repeat;
+    /* background-position: 100px 200px; */
+    background-size:cover;
+   
+}
+.text{
+    float: left;
+    padding: 30px;
+    
+}
+
+.h1{
+   font-size: 50px;
+    color: brown;
+    padding: 10px;
+   
+    
+}
+
+.h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+   
+    padding: 10px;
+}
+
+.b{
+    background-color: blue;
+    margin: 0px 0px 10px 0px;
+    padding: 10px 10px 10px 10px;
+   
+    
+    
+}
+
+.b:hover{
+    background: red;
+    color: #fff;
+}
+
+.h3{
+  
+    font-size: 30px;
+    padding: 10px 0px 0px 0px;
+}
+
+footer{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    height: 100px;
+}

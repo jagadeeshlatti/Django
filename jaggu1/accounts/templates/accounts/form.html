@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <title>
+        fill detailS
+    </title>
+    <!-- <link rel="stylesheet" type="text/css" href="formstyle.css"> -->
+    <link rel="stylesheet" type="text/css" href="{% static '/css/formstyle.css' %}">
+
+
+</head>
+<body>
+    <!-- <div class="div2">
+        <div class="v">
+        <h1>VISION </h1>
+        <h2>IS THE</h2>
+        <h3>ART OF</h3>
+        <h4>SEEING</h4>
+        <h4>WHAT IS</h4>
+        <h5>INVISIBLE</h5>
+        <H6>TO</H6>
+        <H6>OTHERS</H6> 
+        </div> 
+    </div> -->
+    <form id="my-form">
+        <div class="div1">
+            <div class="msg"></div>
+            <label for="fname"> patient first name</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter your first name"><br>
+            <label for="lname"> patient last name</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Enter your last name"><br>
+            <label for="age">Age</label><br>
+            <input type="number" id="age" name="age"><br>
+            <label for="sex">Sex</label><br>
+            <select for="sex">
+                <option >Male</option>
+                <option >Female</option>
+                <option >Others</option>
+            </select><br>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" placeholder="DD/MM/YYYY"><br>
+            <label for="pno">Ph.No</label><br>
+            <input type="number" id="pno" name="pno"><br>
+            <label for="mno">Mob.No</label><br>
+            <input type="number" id="mno" name="mno"><br>
+            <label for="address">Address</label><br>
+            <input type="text" id="address" name="address" placeholder="Street Address"><br>
+            <input type="text" id="address" name="address" placeholder="City">
+            <input type="text" id="address" name="address" placeholder="Pin code"><br>
+            <input type="text" id="address" name="address" placeholder="State">
+            <input type="text" id="address" name="address" placeholder="Country"><br>
+            <label for="problem">Problem/Disease</label><br>
+            <input type="text" id="problem" name="problem" ><br>
+            <label for="time">Preferd Time for consulting</label><br>
+            <select>
+                <option >Morning-10am to 1pm</option> 
+                <option >Afternoon-2pm to 5pm</option> 
+                <option >Evning-5pm to 8pm</option> 
+                <option >Night-9pm to 12am</option> 
+            </select><br>
+           
+            <div class="b1" >
+                <button class="btn" type="submit" onclick="myFunction()">Submit
+                </button>
+
+            </div>
+            <script>
+                function myFunction() {
+                   
+
+                    if(fnameinput.value === ''||lnameinput.value === ''|| (mnoinput.value === '' && pnoinput.value === '' ))
+                    {
+                        alert("please enter Name & Mob.NO ");
+                    }
+                    else{
+                        console.log('succes');
+                    }
+
+                }
+                </script>
+
+            <!-- <input class="btn" type="submit" value="Submit"> -->
+        </div>
+    </form>
+  <script  src="form.js"></script>
+</body>
